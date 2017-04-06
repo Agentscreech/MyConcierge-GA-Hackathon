@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Agentscreech/MyConcierge-GA-Hackathon#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
   }
 }
