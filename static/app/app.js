@@ -30,6 +30,10 @@ angular.module('App', ['ui.router', 'ngResource'])
           url: '/provider',
           component: 'providerComp'
         })
+        .state('profileState', {
+          url: '/profile',
+          component: 'profileComp'
+        })
         .state('dashboardState', {
           url: '/dashboard',
           component: 'dashboardComp'
