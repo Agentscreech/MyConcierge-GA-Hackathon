@@ -21,6 +21,7 @@ function NewListingComp(Listing) {
 
 
   newListingComp.create = function(){
+    console.log("data before sending to service", newListingComp.data );
     Listing.createListing(newListingComp.data).then(function(listing){
       if (listing !== false){
         console.log(listing, " added!");
