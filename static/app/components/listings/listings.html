@@ -1,5 +1,14 @@
 <div ng-repeat="listing in listingsComp.listings">
-    <div class="listings">
-
+    <div class="listing">
+        <h3>{{listing.company}}</h3>
+        <p>{{listing.address}}</p>
+        <p>{{listing.phoneNumber}}</p>
+        <div class="service">
+            <p>{{listing.service}}</p>
+            <p>{{listing.date}}</p>
+            <p>{{listing.time}}</p>
+            <p>{{listing.price}}</p>
+            <p>{{listing.duration}}</p>
+        </div>
     </div>
 </div>
