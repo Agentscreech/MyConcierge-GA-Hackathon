@@ -29,6 +29,14 @@ angular.module('App')
 }])
 .factory('Listing', ["$http", function($http){
     return{
+        getListings: function() {
+        var URL = '/api/listings/';
+        var req = {
+            url:URL,
+            method: "GET"
+        };
+        return $http(req);
+    },
         createListing: function(params){
             var URL = '/api/listings';
             var req = {
