@@ -1,4 +1,4 @@
-angular.module('App', ['ui.router', 'ngResource', 'ui.materialize'])
+angular.module('App', ['ui.router', 'ngResource'])
   .config([
     '$stateProvider',
     '$urlRouterProvider',
@@ -25,15 +25,14 @@ angular.module('App', ['ui.router', 'ngResource', 'ui.materialize'])
         .state('homeState', {
           url: '/',
           component: 'homeComp'
-        })
-        .state('navbarState', {
-          url: '/',
-          component: 'navbarComp'
         });
+        // .state('navbarState', {
+        //   url: '/',
+        //   component: 'navbarComp'
+        // });
 
       //Redirect to login if url not found or not authenticated
       $urlRouterProvider.otherwise("/");
-      // $urlRouterProvider.otherwise('/');
 
       //Removes # symbol for our routes
       $locationProvider.html5Mode(true);
