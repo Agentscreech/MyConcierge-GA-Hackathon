@@ -6,7 +6,8 @@ angular.module('App')
 });
 
 function NavbarCompCtrl() {
-
+  var navbarComp = this;
+  navbarComp.isLoggedIn = false;
 }
 
 NavbarCompCtrl.$inject = [];

@@ -1,4 +1,9 @@
 <div class="col-xs-12">
+  <div class="profile-nav">
+    <div class="profile-navbar">
+      <button class="profile-nav-btn" ui-sref="$state.go('')">Schedule</button><button class="profile-nav-btn profile-nav-btn-active">Profile</button>
+    </div>
+  </div>
   <div class="profile-banner col-md-4">
     <div class="profile-pic" style="background: url({{profileComp.data.img}}) no-repeat center; background-size: contain;">
       <div class="add-photo" ng-if="profileComp.isLoggedIn">

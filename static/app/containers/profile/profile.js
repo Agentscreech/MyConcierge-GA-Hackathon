@@ -5,7 +5,7 @@ angular.module('App')
   controllerAs: 'profileComp'
 });
 
-function ProfileCompCtrl() {
+function ProfileCompCtrl($state) {
   var profileComp = this;
   profileComp.data = {
     name: "Nicole Brown",
@@ -27,4 +27,4 @@ function ProfileCompCtrl() {
 
 
 }
-ProfileCompCtrl.$inject = [];
+ProfileCompCtrl.$inject = ['$state'];
