@@ -64,30 +64,27 @@ html, body {
   font-size: 15px;
 }
 
-.form-group {
+.profile-form > .form-group {
   margin: 20px 0;
 }
 
-.form-group > label {
+.profile-form > .form-group > label {
   font-weight: 900;
   font-size: 20px;
   color: #666;
 }
 
-.form-control {
+.profile-form > .form-control {
   border-radius: 0;
   border: 1px solid #aaa;
 }
 
-button {
+.block-btn {
+  display: block;
   padding: 5px 40px !important;
   text-transform: uppercase;
   font-weight: 600 !important;
   font-size: 20px !important;
-}
-
-.block-btn {
-  display: block;
   margin: 50px auto 20px;
 }
 
