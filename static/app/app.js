@@ -26,11 +26,15 @@ angular.module('App', ['ui.router', 'ngResource'])
           url: '/',
           component: 'homeComp'
         })
-        .state('provider', {
+        .state('providerState', {
           url: '/provider',
           component: 'providerComp'
         })
-        .state('appointment', {
+        .state('dashboardState', {
+          url: '/dashboard',
+          component: 'dashboardComp'
+        })
+        .state('appointmentState', {
           url: '/appointment',
           component: 'appointmentComp'
         });

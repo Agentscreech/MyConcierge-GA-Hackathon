@@ -16,5 +16,6 @@ function ProviderCompCtrl() {
     img: "",
     services: [],
   }
+  providerComp.industries = ["hair", "nails", "spa"]
 }
 ProviderCompCtrl.$inject = [];
