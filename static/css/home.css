@@ -1,3 +1,15 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: 50px auto;
+}
+
 .home-banner {
   width: 100%;
   height: 300px;
