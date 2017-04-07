@@ -21,6 +21,8 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(require('morgan')('dev'));
 
 //placeholder for bringing in the controllers/routers
+app.use('/api/providers', require('./controllers/providers'));
+
 
 //root route
 app.get('/*', function(req,res){
