@@ -29,6 +29,10 @@ angular.module('App', ['ui.router', 'ngResource'])
         .state('provider', {
           url: '/provider',
           component: 'providerComp'
+        })
+        .state('appointment', {
+          url: '/appointment',
+          component: 'appointmentComp'
         });
 
       //Redirect to login if url not found or not authenticated
