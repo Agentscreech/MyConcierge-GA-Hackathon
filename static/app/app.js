@@ -25,11 +25,11 @@ angular.module('App', ['ui.router', 'ngResource'])
         .state('homeState', {
           url: '/',
           component: 'homeComp'
+        })
+        .state('provider', {
+          url: '/provider',
+          component: 'providerComp'
         });
-        // .state('navbarState', {
-        //   url: '/',
-        //   component: 'navbarComp'
-        // });
 
       //Redirect to login if url not found or not authenticated
       $urlRouterProvider.otherwise("/");
