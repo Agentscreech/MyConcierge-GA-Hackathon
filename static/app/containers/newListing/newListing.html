@@ -1,7 +1,7 @@
 <div class="col-xs-12">
     <form class="" ng-submit="newListingComp.create()">
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="input-group date" id="datetimepicker1">
                 <label for="date">Date and Time</label>
                 <input type="text" class="form-control" ng-model="newListingComp.data.date" />
@@ -14,7 +14,17 @@
             $(function() {
                 $('#datetimepicker1').datetimepicker();
             });
-        </script>
+        </script> -->
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="text" class="form-control" ng-model="newListingComp.data.date">
+
+        </div>
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="text" class="form-control" ng-model="newListingComp.data.time">
+
+        </div>
         <div class="form-group">
             <label for="company">Company Name</label>
             <input type="text" class="form-control" ng-model="newListingComp.data.company">
