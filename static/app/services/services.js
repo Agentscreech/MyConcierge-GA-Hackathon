@@ -26,4 +26,26 @@ angular.module('App')
           });
       }
   };
+}])
+.factory('Listing', ["$http", function($http){
+    return{
+        createListing: function(params){
+            var URL = '/api/listings';
+            var req = {
+                url:URL,
+                method: "POST",
+                data: params
+            };
+            return $http(req).then(function(res){
+                if(res.status !== 200){
+                    return false;
+                }
+                return res.data;
+            }, function error(res){
+                return res;
+            });
+        }
+
+    };
+
 }]);

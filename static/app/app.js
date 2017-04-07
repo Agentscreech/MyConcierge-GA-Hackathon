@@ -34,9 +34,9 @@ angular.module('App', ['ui.router', 'ngResource'])
           url: '/dashboard',
           component: 'dashboardComp'
         })
-        .state('appointmentState', {
-          url: '/appointment',
-          component: 'appointmentComp'
+        .state('newListingState', {
+          url: '/newListing',
+          component: 'newListingComp'
         });
 
       //Redirect to login if url not found or not authenticated

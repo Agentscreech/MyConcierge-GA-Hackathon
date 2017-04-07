@@ -16,17 +16,14 @@ router.route('/')
     })
     .post(function(req, res) {
         //test to see if provider already exists
-        console.log("REQUEST RECIEVED TO POST", req.body);
         Provider.findOne({
             company: req.body.company
         }, function(err, provider) {
             if (provider) return res.status(400).send({
                 message: 'Provider already exists'
             });
-            console.log("TRYING TO CREATE ", req.body);
             Provider.create(req.body, function(err, provider) {
                 if (err) return res.status(500).send(err);
-                console.log("RETURNING ", provider);
                 return res.send(provider);
             });
         });

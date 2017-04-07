@@ -22,7 +22,7 @@ app.use(require('morgan')('dev'));
 
 //placeholder for bringing in the controllers/routers
 app.use('/api/providers', require('./controllers/providers'));
-
+app.use('/api/listings', require('./controllers/listings'));
 
 //root route
 app.get('/*', function(req,res){

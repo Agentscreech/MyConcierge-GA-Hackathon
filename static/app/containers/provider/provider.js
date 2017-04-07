@@ -13,12 +13,12 @@ function ProviderCompCtrl(Provider) {
     address: "",
     phoneNumber: "",
     bio: "",
-    // img: "",
-    // services: [],
+    img: "",
+    services: [],
   };
 
-  providerComp.industries = ["hair", "nails", "spa"]
-  
+  providerComp.industries = ["hair", "nails", "spa"];
+
   providerComp.create = function(){
     Provider.createProvider(providerComp.data).then(function(provider){
       if (provider !== false){
