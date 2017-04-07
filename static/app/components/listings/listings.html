@@ -1,14 +1,16 @@
 <div ng-repeat="listing in listingsComp.listings">
-    <div class="listing">
-        <h3>{{listing.company}}</h3>
-        <p>{{listing.address}}</p>
-        <p>{{listing.phoneNumber}}</p>
-        <div class="service">
-            <p>{{listing.service}}</p>
-            <p>{{listing.date}}</p>
-            <p>{{listing.time}}</p>
-            <p>{{listing.price}}</p>
-            <p>{{listing.duration}}</p>
+    <div class="well">
+        <div class="listing">
+            <p>Company:<span><h3>{{listing.company}}</h3></span>
+             <p>Address: <span>{{listing.address}}</span></p>
+            <p>Phone: <span>{{listing.phoneNumber}}</span></p>
+            <div class="service well">
+                <h4>Service:</h4>
+                <p><strong>{{listing.service}}</strong></p>
+                <p>When: <span><strong>{{listing.date}} at {{listing.time}}</strong></span></p>
+                <p>Price: <span>${{listing.price}}</span></p>
+                <p>Duration: <span>{{listing.duration}} minutes</span></p>
+            </div>
         </div>
     </div>
 </div>
