@@ -10,7 +10,7 @@ function ListingsCompCtrl(Listing) {
   listingsComp.listings = "";
   Listing.getListings().then(function(res){
     listingsComp.listings = res.data;
-    console.log(listingsComp.listings)
+    console.log(listingsComp.listings);
   });
 }
 
