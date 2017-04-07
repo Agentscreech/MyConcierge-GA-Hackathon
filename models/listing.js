@@ -13,7 +13,7 @@ var ListingSchema = mongoose.Schema([{
     service:String,
     price:Number,
     duration:Number, // in minutes?
-    rating:Number
+    claimed:Boolean
 }], {
     collection: 'listing'
 });
