@@ -1,0 +1,29 @@
+<div>
+  <form ng-submit="newProviderComp.new()">
+    <div class="form-group">
+      <label for="company">your company name</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. Liana Hair Salon" ng-model="newProviderComp.data.company">
+    </div>
+    <div class="form-group">
+      <label for="industry">industry</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. Hair, Massage, Mechanic" ng-model="newProviderComp.data.industry">
+    </div>
+    <div class="form-group">
+      <label for="address">address</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. 123 Fake Street, Springfield" ng-model="newProviderComp.data.address">
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">phone number</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. 555-555-5555" ng-model="newProviderComp.data.phoneNumber">
+    </div>
+    <div class="form-group">
+      <label for="bio">bio</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. we do hair and it's great" ng-model="newProviderComp.data.bio">
+    </div>
+    <div class="form-group">
+      <label for="services">services provided</label>
+      <input type="text" class="form-control" id="" placeholder="separate your services by commas" ng-model="newProviderComp.data.services">
+    </div>
+    <button type="submit">submit</button>
+  </form>
+</div>

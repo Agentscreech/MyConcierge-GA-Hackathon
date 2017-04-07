@@ -25,6 +25,9 @@ angular.module('App', ['ui.router', 'ngResource'])
         .state('homeState', {
           url: '/',
           component: 'homeComp'
+        }).state('newProviderState', {
+          url: '/providers',
+          component: 'newProviderComp'
         });
         // .state('navbarState', {
         //   url: '/',
