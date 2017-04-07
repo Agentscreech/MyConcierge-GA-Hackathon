@@ -16,18 +16,12 @@ router.route('/')
     })
     .post(function(req, res) {
         //test to see if listing already exists
-        Listing.findOne({
-            name: req.body.name
-        }, function(err, listing) {
-            if (listing) return res.status(400).send({
-                message: 'listing already exists'
-            });
+        console.log('TRYING TO CREATE NEW LISTING!', req.body);
             Listing.create(req.body, function(err, listing) {
                 if (err) return res.status(500).send(err);
 
                 return res.send(listing);
             });
         });
-    });
 
 module.exports = router;

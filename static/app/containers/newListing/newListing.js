@@ -9,9 +9,8 @@ function NewListingComp(Listing) {
   var newListingComp = this;
   newListingComp.data = {
     time: "",
-    data: "",
+    date: "",
     company: "",
-    industry: "",
     address: "",
     phoneNumber: "",
     service: "",
@@ -19,6 +18,7 @@ function NewListingComp(Listing) {
     duration: "",
     claimed: "false"
   };
+
 
   newListingComp.create = function(){
     Listing.createListing(newListingComp.data).then(function(listing){
