@@ -1,4 +1,29 @@
 angular.module('App')
-.factory('Provider', ["$resource", function($resource){
-  return $resource('/api/provider/:id', {id: '@user_id'});
+.factory('Provider', ["$http", function($http){
+  return {
+      getProviders: function() {
+          var URL = '/api/providers/';
+          var req = {
+              url:URL,
+              method: "GET"
+          };
+          return $http(req);
+      },
+      createProvider: function(params) {
+          var URL = '/api/providers';
+          var req = {
+              url: URL,
+              method: "POST",
+              data: params
+          };
+          return $http(req).then(function(res){
+              if(res.status !== 200){
+                  return false;
+              }
+              return res.data;
+          }, function error(res){
+              return res;
+          });
+      }
+  };
 }]);

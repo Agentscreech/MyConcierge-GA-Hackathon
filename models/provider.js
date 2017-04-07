@@ -8,7 +8,7 @@ var ServiceSchema = mongoose.Schema({
     duration:Number, //in minutes?
 });
 
-var ProviderSchema = mongoose.Schema([{
+var ProviderSchema = mongoose.Schema({
     company:String,
     industry:String,
     address:String,
@@ -17,8 +17,8 @@ var ProviderSchema = mongoose.Schema([{
     img:String,  //linked URL
     services:[ServiceSchema],
     rating:Number
-}], {
-    collection: 'provider'
+}, {
+    collection: 'providers'
 });
 
 

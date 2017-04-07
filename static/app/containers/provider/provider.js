@@ -5,7 +5,7 @@ angular.module('App')
   controllerAs: 'providerComp'
 });
 
-function ProviderCompCtrl() {
+function ProviderCompCtrl(Provider) {
   var providerComp = this;
   providerComp.data = {
     company: "",
@@ -13,8 +13,17 @@ function ProviderCompCtrl() {
     address: "",
     phoneNumber: "",
     bio: "",
-    img: "",
-    services: [],
-  }
+    // img: "",
+    // services: [],
+  };
+  providerComp.create = function(){
+    Provider.createProvider(providerComp.data).then(function(provider){
+      if (provider !== false){
+        console.log(provider, " added!");
+      } else {
+        console.log(provider.status, "error");
+      }
+    });
+  };
 }
-ProviderCompCtrl.$inject = [];
+ProviderCompCtrl.$inject = ['Provider'];
