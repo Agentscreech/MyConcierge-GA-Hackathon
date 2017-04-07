@@ -2,8 +2,12 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
-.new-profile-page-banner {
-  padding: 50px 0;
+.container {
+  margin: 50px 0;
+}
+
+.profile-banner {
+  margin: 30px 0;
 }
 
 .profile-pic {
@@ -42,6 +46,10 @@ html, body {
 
 }
 
+.form-group {
+  margin: 20px 0;
+}
+
 .form-group > label {
   font-weight: 900;
   font-size: 20px;
@@ -51,4 +59,16 @@ html, body {
 .form-control {
   border-radius: 0;
   border: 1px solid #aaa;
+}
+
+button {
+  padding: 5px 40px !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px !important;
+}
+
+.block-btn {
+  display: block;
+  margin: 50px auto 20px;
 }
