@@ -2,17 +2,53 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+.new-profile-page-banner {
+  padding: 50px 0;
+}
+
 .profile-pic {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  border: 1px solid #aaa;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(170, 170, 170, 1);
+  background: url("../images/profile_placeholder.png") no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
 }
 
 .add-photo {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.35);
+}
 
+.add-photo > div {
+  position: absolute;
+  width: 100%;
+  top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-photo > div > i {
+  margin-right: 5px;
+  font-size: 15px;
+
+}
+
+.form-group > label {
+  font-weight: 900;
+  font-size: 20px;
+  color: #666;
 }
 
 .form-control {
   border-radius: 0;
+  border: 1px solid #aaa;
 }
