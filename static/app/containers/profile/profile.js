@@ -23,6 +23,8 @@ function ProfileCompCtrl() {
       "Men's Haircut", "Straightening"],
   };
 
+  profileComp.isLoggedIn = false;
+
 
 }
 ProfileCompCtrl.$inject = [];
