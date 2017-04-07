@@ -16,6 +16,9 @@ function ProviderCompCtrl(Provider) {
     // img: "",
     // services: [],
   };
+
+  providerComp.industries = ["hair", "nails", "spa"]
+  
   providerComp.create = function(){
     Provider.createProvider(providerComp.data).then(function(provider){
       if (provider !== false){
@@ -25,5 +28,6 @@ function ProviderCompCtrl(Provider) {
       }
     });
   };
+
 }
 ProviderCompCtrl.$inject = ['Provider'];

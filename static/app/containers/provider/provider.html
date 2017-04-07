@@ -1,31 +1,36 @@
 <h1>provider page</h1>
-
-<p>form to add a provider here</p>
-<div>
+<div class="col-xs-12">
+  <div class="profile-pic"><div class="add-photo"></div></div>
   <form ng-submit="providerComp.create()">
     <div class="form-group">
-      <label for="company">your company name</label>
+      <label for="company">Company Name</label>
       <input type="text" class="form-control" id="" placeholder="e.g. Liana Hair Salon" ng-model="providerComp.data.company">
     </div>
     <div class="form-group">
-      <label for="industry">industry</label>
-      <input type="text" class="form-control" id="" placeholder="e.g. Hair, Massage, Mechanic" ng-model="providerComp.data.industry">
-    </div>
-    <div class="form-group">
-      <label for="address">address</label>
-      <input type="text" class="form-control" id="" placeholder="e.g. 123 Fake Street, Springfield" ng-model="providerComp.data.address">
-    </div>
-    <div class="form-group">
-      <label for="phoneNumber">phone number</label>
+      <label for="phoneNumber">Contact</label>
       <input type="text" class="form-control" id="" placeholder="e.g. 555-555-5555" ng-model="providerComp.data.phoneNumber">
     </div>
     <div class="form-group">
-      <label for="bio">bio</label>
-      <input type="text" class="form-control" id="" placeholder="e.g. we do hair and it's great" ng-model="providerComp.data.bio">
+      <label for="industry">Industry</label>
+      <select class="form-control">
+        <option id="" ng-repeat="industry in providerComp.industries track by $index">{{industry}}</option>
+      </select>
     </div>
     <div class="form-group">
-      <label for="services">services provided</label>
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="" placeholder="e.g. 123 Fake Street, Springfield" ng-model="providerComp.data.address">
+    </div>
+    <div class="form-group">
+      <label for="services">Services</label>
       <input type="text" class="form-control" id="" placeholder="separate your services by commas" ng-model="providerComp.data.services">
+    </div>
+    <div class="form-group">
+      <label for="bio">Provider Bio</label>
+      <textarea class="form-control" id="" placeholder="e.g. we do hair and it's great" ng-model="providerComp.data.bio"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="payment">Payment Routing Info</label>
+      <input type="text" class="form-control" id="" placeholder="">
     </div>
     <button type="submit">submit</button>
   </form>
