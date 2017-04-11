@@ -1,3 +1,6 @@
+<div class="text-center">
+    <h2>Here are the appointments that are available to book</h2>
+</div>
 <div ng-repeat="listing in listingsComp.listings">
     <div class="well">
         <div class="listing">
@@ -12,5 +15,6 @@
                 <p>Duration: <span>{{listing.duration}} minutes</span></p>
             </div>
         </div>
+        <button class="btn btn-primary push-right" type="button" name="button">Book this</button>
     </div>
 </div>
